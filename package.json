@@ -1,0 +1,43 @@
+{
+  "name": "local-scope",
+  "description": "ES 2015 way of making private properties in class-based programming",
+  "version": "0.1.0",
+  "author": {
+    "name": "Robert Rossmann",
+    "email": "rr.rossmann@me.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Dreamscapes/local-scope/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "coveralls": "^2.11.4",
+    "eslint": "^1.7.3",
+    "istanbul": "^0.4.0",
+    "jsdoc": "^3.3.3",
+    "mocha": "^2.3.3"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "homepage": "https://github.com/Dreamscapes/local-scope",
+  "keywords": [
+    "access",
+    "class",
+    "classes",
+    "local",
+    "private",
+    "properties",
+    "property",
+    "scope"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "lib/scope.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Dreamscapes/local-scope"
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}

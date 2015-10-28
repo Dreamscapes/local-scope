@@ -1,0 +1,12 @@
+---
+sudo: false
+language: node_js
+node_js:
+- 4.2.0
+script: make lint test
+deploy:
+  provider: npm
+  email: rr.rossmann@gmail.com
+  on:
+    tags: true
+    repo: Dreamscapes/local-scope
