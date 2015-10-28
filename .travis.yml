@@ -4,6 +4,7 @@ language: node_js
 node_js:
 - 4.2.0
 script: make lint test
+after_success: make coveralls
 deploy:
   provider: npm
   email: rr.rossmann@gmail.com
