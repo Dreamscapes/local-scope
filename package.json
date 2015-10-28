@@ -1,7 +1,7 @@
 {
   "name": "local-scope",
   "description": "ES 2015 way of making private properties in class-based programming",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": {
     "name": "Robert Rossmann",
     "email": "rr.rossmann@me.com"
