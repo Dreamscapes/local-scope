@@ -1,8 +1,0 @@
----
-env:
-  mocha: true
-rules:
-  # Mocha provides its own context (this) for the tests so let's not prevent that
-  prefer-arrow-callback: 0
-  # No jsdocs needed for test-related functions
-  require-jsdoc: 0

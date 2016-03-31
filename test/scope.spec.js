@@ -9,36 +9,35 @@
 'use strict'
 
 const expect = require('chai').expect
-    , localscope = require('..')
-    , local = localscope()
+const localscope = require('..')
+const local = localscope()
 
-describe('Scoped access', function () {
-
-  it('should be function', function () {
+describe('Scoped access', function() {
+  it('should be function', function() {
     expect(local).to.be.a('function')
   })
 
-  it('should return object', function () {
+  it('should return object', function() {
     expect(local({})).to.be.an('object')
   })
 
-  it('should only accept objects as keys', function () {
+  it('should only accept objects as keys', function() {
     expect(() => local(1234)).to.throw(TypeError)
     expect(() => local('ab')).to.throw(TypeError)
     expect(() => local(null)).to.throw(TypeError)
   })
 
-  it('should return the same object for the same key', function () {
+  it('should return the same object for the same key', function() {
     const key = {}
 
     expect(local(key) === local(key)).to.eql(true)
   })
 
-  it('should return different object for different keys', function () {
+  it('should return different object for different keys', function() {
     expect(local({}) === local({})).to.eql(false)
   })
 
-  it('should preserve data added to the scope', function () {
+  it('should preserve data added to the scope', function() {
     const key = {}
 
     local(key).secret = 'this must be preserved'
@@ -47,20 +46,19 @@ describe('Scoped access', function () {
   })
 })
 
-describe('Scope generator', function () {
-
-  it('should be function', function () {
+describe('Scope generator', function() {
+  it('should be function', function() {
     expect(localscope).to.be.a('function')
   })
 
-  it('should return function', function () {
+  it('should return function', function() {
     expect(localscope()).to.be.a('function')
   })
 
-  it('should generate new private context for each new scope function', function () {
+  it('should generate new private context for each new scope function', function() {
     const local1 = localscope()
-        , local2 = localscope()
-        , key = {}
+    const local2 = localscope()
+    const key = {}
 
     expect(local1(key) === local2(key)).to.eql(false)
   })
