@@ -10,14 +10,15 @@
     "url": "https://github.com/Dreamscapes/local-scope/issues"
   },
   "devDependencies": {
-    "@strv/eslint-config-javascript": "^3.0.0",
+    "@strv/eslint-config-javascript": "^5.0.0",
     "chai": "^3.4.0",
     "coveralls": "^2.11.4",
-    "eslint": "^2.5.3",
+    "eslint": "^3.0.0",
     "istanbul": "^0.4.0",
     "jsdoc": "^3.3.3",
-    "mocha": "^2.3.3"
+    "mocha": "^3.0.0"
   },
+  "dependencies": {},
   "engines": {
     "node": ">=4.0.0"
   },
