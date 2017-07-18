@@ -9,6 +9,8 @@
   "bugs": {
     "url": "https://github.com/Dreamscapes/local-scope/issues"
   },
+  "contributors": [],
+  "dependencies": {},
   "devDependencies": {
     "@strv/eslint-config-javascript": "^7.1.0",
     "chai": "^4.1.0",
@@ -19,7 +21,6 @@
     "jsdoc": "^3.3.3",
     "mocha": "^3.0.0"
   },
-  "dependencies": {},
   "engines": {
     "node": ">=4.0.0"
   },
