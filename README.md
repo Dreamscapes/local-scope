@@ -21,6 +21,13 @@ You start by generating a private scope manager. This ensures that no other modu
 const local = require('local-scope')() // <-- Notice the function call!
 ```
 
+Alternatively, to make full use of ES2015 module syntax, you can create a new scope this way:
+
+```js
+// This will create your very own scope manager
+import scope from 'local-scope/create'
+```
+
 Now you can use that `local` function to set and retrieve private data from your own functions!
 
 ```js
