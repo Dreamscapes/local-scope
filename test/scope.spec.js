@@ -45,6 +45,13 @@ describe('Scoped access', () => {
 
     expect(local(key)).to.include.key('secret')
   })
+
+  it('should allow passing the key via `this`', () => {
+    const key = {}
+
+    local.call(key).secret = 'message'
+    expect(local.call(key)).to.include.key('secret')
+  })
 })
 
 describe('Scope generator', () => {
